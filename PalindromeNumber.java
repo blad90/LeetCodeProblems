@@ -6,7 +6,7 @@ import java.util.*;
 public class PalindromeNumber {
 
     public static void main(String[] args) {
-        isPalindrome(121);
+        System.out.println(isPalindrome(121));
     }
 
     public static boolean isPalindrome(int x) {
@@ -21,7 +21,6 @@ public class PalindromeNumber {
             x = x / 10;
             nums.push(result);
         }
-        System.out.println(nums);
 
         for (int i = nums.size()-1; i >= 0 && !nums.isEmpty(); i--) {
             if(nums.getFirst() == nums.getLast()){
@@ -30,7 +29,6 @@ public class PalindromeNumber {
                 flag = true;
             } else flag = false;
         }
-        System.out.println(flag);
         return flag;
     }
 }
