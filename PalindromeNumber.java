@@ -2,7 +2,6 @@ import java.util.*;
 
 /** Given an integer x, return true if x is a palindrome ,and false otherwise.
 * */
-
 public class PalindromeNumber {
 
     public static void main(String[] args) {
@@ -11,7 +10,7 @@ public class PalindromeNumber {
 
     public static boolean isPalindrome(int x) {
         Deque<Integer> nums = new LinkedList<>();
-        int result = -1;
+        int result;
         boolean flag = false;
 
         if(x % 10 == 0) return true;
